@@ -231,15 +231,15 @@ public class Animal extends Actor {
 				getIntersectingObjects(Truck.class).size() >= 1 ||
 				getIntersectingObjects(LongTruck.class).size() >= 1)
 				{
-	//			IntersectCar(now);
+				IntersectCar(now);
 			}
 
 			else if (getIntersectingObjects(Log.class).size() >= 1 && !death) {
-	//			IntersectLog();
+				IntersectLog();
 			}
 			
 			else if (getIntersectingObjects(LongLog.class).size() >= 1 && !death) {
-	//			IntersectLongLog();
+				IntersectLongLog();
 			}
 			
 			else if (getIntersectingObjects(Turtle.class).size() >= 1) {
@@ -255,8 +255,8 @@ public class Animal extends Actor {
 				}
 			
 			else if (getY() < waterPositionY){
-	//			death = true;
-	//			frogDeath(now, "water");
+				death = true;
+				frogDeath(now, "water");
 			}
 		}
 	}
