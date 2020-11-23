@@ -22,6 +22,7 @@ public class HelpDisplay {
 
 		createBackground();
 		createQuitButton();
+		addInstructions();
 		
 	
 	}
@@ -38,9 +39,24 @@ public class HelpDisplay {
 	public void createQuitButton()
 	{
 		QuitButton quitButton = new QuitButton(5, 700);
-		helpPane.add(quitButton);	
+		helpPane.add(quitButton);
+		quitButton.setOnAction(new EventHandler<ActionEvent>()
+		{
+			@Override
+			public void handle(ActionEvent event)
+			{
+				Platform.exit();
+			}
+		});
 	}
 	
-	
+	public void addInstructions() {
+		instructions = new ImageView(new Image("file:src/View/HowToPlay.png", 500, 700, true, true));
+		helpPane.add(instructions);
+		instructions.setLayoutX(50);
+		instructions.setLayoutY(250);
+		
+		
+	}
 	
 }
