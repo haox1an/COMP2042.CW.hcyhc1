@@ -34,6 +34,11 @@ public class MenuDisplay {
 		
 	}
 	
+	public void createMenuStage() {
+		menuStage.show();
+		
+	}
+	
 	public Stage getStage() {
 		return menuStage;
 	}
@@ -54,6 +59,7 @@ public class MenuDisplay {
 			@Override
 			public void handle(ActionEvent event)
 				{
+					menuStage.hide();
 					DisplayGame game = new DisplayGame();
 					game.createGame();
 				}
@@ -71,8 +77,9 @@ public class MenuDisplay {
 			@Override
 			public void handle(ActionEvent event)
 			{
+				menuStage.hide();
 				HelpDisplay help = new HelpDisplay();
-				menuStage.setScene(help.helpScene);
+				help.createHelpStage();
 			}
 		});	
 	}

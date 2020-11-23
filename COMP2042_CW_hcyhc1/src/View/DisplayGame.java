@@ -33,17 +33,15 @@ public class DisplayGame{
 	
 	
 	public DisplayGame(){
-		this.frog = new Animal();
-		this.gamePane = new MyStage();
-		this.gameScene = new Scene(gamePane,600,800);
-		this.gameStage = new Stage();
-		// gamePane.start();
+		
+		gamePane = new MyStage();
+		gameScene = new Scene(gamePane,600,800);
+		gameStage = new Stage();
 		gameStage.setScene(gameScene);
 		createBackground();
 		addObstacles();
 		addFrog();
 		addEndImg();
-		gamePane.add(frog);
 		timerstart();
 	}
 	
@@ -109,9 +107,6 @@ public class DisplayGame{
 		gamePane.add(new End(527));
 	}
 
-	public Stage getStage() {
-		return gameStage;
-	}
 	public void createBackground() {
 		BackgroundImage gameBackground = new BackgroundImage("file:src/View/iKogsKW.png");
 		gamePane.add(gameBackground);
@@ -122,8 +117,8 @@ public class DisplayGame{
 	}
 	
 	public void addFrog() {
-		
-
+		frog = new Animal();
+		gamePane.add(frog);
 	}
 	
 	public void addDigit() {
@@ -149,7 +144,6 @@ public class DisplayGame{
 //	            	if (frog.changeScore()) {
 //	            		setNumber(frog.getPoints());
 //	            	}
-	            	System.out.println(frog.getStop());
 	            	if (frog.getStop()) {
 	            		System.out.print("STOPP");
 //	            		gamePane.stopMusic(); 
@@ -165,11 +159,11 @@ public class DisplayGame{
 	        };
 	    }
 		
-		public void timerstart() {
-			gameTimer();
-			timer.start();
+	public void timerstart() {
+		gameTimer();
+		timer.start();
 			}
-		}
+	}
 
 		
 
