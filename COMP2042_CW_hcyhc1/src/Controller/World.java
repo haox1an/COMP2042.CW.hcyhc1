@@ -4,7 +4,6 @@ package Controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.Actor;
 import javafx.animation.AnimationTimer;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

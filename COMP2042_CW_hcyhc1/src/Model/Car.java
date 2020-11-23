@@ -1,5 +1,6 @@
 package Model;
 
+import Controller.Actor;
 import javafx.scene.image.Image;
 
 public class Car extends Actor {

@@ -3,9 +3,9 @@ package View;
 
 import java.util.List;
 
+import Controller.Actor;
+import Controller.Animal;
 import Controller.MyStage;
-import Model.Actor;
-import Model.Animal;
 import Model.BackgroundImage;
 import Model.Car;
 import Model.Digit;
