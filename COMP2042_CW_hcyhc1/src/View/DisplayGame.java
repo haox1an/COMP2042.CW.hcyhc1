@@ -3,23 +3,23 @@ package View;
 
 import java.util.List;
 
+import Controller.MyStage;
+import Model.Actor;
+import Model.Animal;
+import Model.BackgroundImage;
+import Model.Car;
+import Model.Digit;
+import Model.End;
+import Model.Log;
+import Model.LongLog;
+import Model.LongTruck;
+import Model.Truck;
+import Model.Turtle;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
-import p4_group_8_repo.Actor;
-import p4_group_8_repo.Animal;
-import p4_group_8_repo.BackgroundImage;
-import p4_group_8_repo.Car;
-import p4_group_8_repo.Digit;
-import p4_group_8_repo.End;
-import p4_group_8_repo.Log;
-import p4_group_8_repo.LongLog;
-import p4_group_8_repo.LongTruck;
-import p4_group_8_repo.MyStage;
-import p4_group_8_repo.Truck;
-import p4_group_8_repo.Turtle;
 
 public class DisplayGame{
 	AnimationTimer timer;

@@ -1,12 +1,12 @@
 package View;
 
+import Controller.MyStage;
 import Controller.QuitButton;
+import Model.BackgroundImage;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import p4_group_8_repo.BackgroundImage;
-import p4_group_8_repo.MyStage;
 
 public class HelpDisplay {
 		MyStage helpPane;
@@ -15,7 +15,7 @@ public class HelpDisplay {
 	public HelpDisplay() {
 		helpPane = new MyStage();
 		helpScene = new Scene(helpPane, 600, 800);
-		helpPane.start();
+//		helpPane.start();
 		createBackground();
 		createQuitButton();
 	}

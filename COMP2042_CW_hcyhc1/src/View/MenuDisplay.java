@@ -1,14 +1,14 @@
 package View;
 
 import Controller.FroggerButton;
+import Controller.MyStage;
 import Controller.QuitButton;
+import Model.BackgroundImage;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import p4_group_8_repo.BackgroundImage;
-import p4_group_8_repo.MyStage;
 
 public class MenuDisplay {
 	MyStage mainPane;
