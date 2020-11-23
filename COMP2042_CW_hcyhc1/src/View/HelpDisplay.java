@@ -7,17 +7,23 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class HelpDisplay {
 		MyStage helpPane;
 		Scene helpScene;
-	
+		ImageView instructions;
+				
 	public HelpDisplay() {
+
 		helpPane = new MyStage();
 		helpScene = new Scene(helpPane, 600, 800);
-//		helpPane.start();
+
 		createBackground();
 		createQuitButton();
+		
+	
 	}
 	
 	
@@ -32,19 +38,9 @@ public class HelpDisplay {
 	public void createQuitButton()
 	{
 		QuitButton quitButton = new QuitButton(5, 700);
-		helpPane.add(quitButton);
-		
-		quitButton.setOnAction(new EventHandler<ActionEvent>()
-		{
-			@Override
-			public void handle(ActionEvent event)
-			{
-				Platform.exit();
-
-			}
-		});
-		
+		helpPane.add(quitButton);	
 	}
+	
 	
 	
 }

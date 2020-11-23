@@ -3,7 +3,7 @@ package Controller;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
@@ -80,6 +80,8 @@ public class QuitButton extends Button{
 			}
 		});
 	}
+	
+	
 
 
 

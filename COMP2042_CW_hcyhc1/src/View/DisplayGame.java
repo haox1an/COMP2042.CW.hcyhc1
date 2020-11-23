@@ -168,8 +168,13 @@ public class DisplayGame{
 		public void timerstart() {
 			gameTimer();
 			timer.start();
+			}
 		}
-	}
+
+		
+
+
+	
 	
 	
 	
