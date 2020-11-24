@@ -4,29 +4,29 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.control.Button;
 import javafx.scene.text.Font;
 
 public class FroggerButton extends Button{
 	
-	private final String Button_Style1 = "-fx-background-color: transparent; -fx-background-image: url('/View/Button.png'); -fx-background-repeat: no-repeat; -fx-background-position: center;";
-	private final String Button_Style2 = "-fx-background-color: transparent; -fx-background-image: url('/View/frog_face.png'); -fx-background-repeat: no-repeat; -fx-background-position: center; -fx-background-size: 200px;";
-	private final String Button_Font = "src/View/ARCADECLASSIC.ttf";
+	private final String Button_Style1 = "-fx-background-color: transparent; -fx-background-image: url('src/Controller/Button.png'); -fx-background-repeat: no-repeat; -fx-background-position: center;";
+	private final String Button_Style2 = "-fx-background-color: transparent; -fx-background-image: url('src/Controller/frog_face.png'); -fx-background-repeat: no-repeat; -fx-background-position: center; -fx-background-size: 200px;";
+	private final String Button_Font = "src/Controller/ARCADECLASSIC.ttf";
 
 	public FroggerButton(String text, int Xpos, int Ypos)
 	{
-		setText(text);
 		setButtonFont();
 		setPrefWidth(500);
 		setPrefHeight(199);
+		setText(text);
 		setStyle(Button_Style1);
 		initializeButtonListener();
 		setLayoutX(Xpos);
 		setLayoutY(Ypos);
-		
-		
 	}
 
 	private void setButtonFont() {
@@ -34,7 +34,7 @@ public class FroggerButton extends Button{
 			setFont(Font.loadFont(new FileInputStream(Button_Font), 85));
 		}
 		catch (FileNotFoundException e) {
-			setFont(Font.font("Verdana", 50));
+			setFont(Font.font("Verdana", 85));
 			
 		}
 		
